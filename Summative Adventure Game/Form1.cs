@@ -44,7 +44,6 @@ namespace Summative_Adventure_Game
             option1.Visible = true;
             option2.Visible = true;
             option3.Visible = true;
-
         }
 
         private void option1_Click(object sender, EventArgs e)
@@ -107,10 +106,6 @@ namespace Summative_Adventure_Game
             {
                 page = 0;
             }
-            else if (page == 99)
-            {
-                page = 0;
-            }
 
             //Displays game options based off current page, this code is reoccuring but I couldn't find a way for the program to work without repeating this
 
@@ -137,9 +132,7 @@ namespace Summative_Adventure_Game
                     option2.Text = "Call out for help";
                     option3.Text = "Attempt to open the cell";
 
-
                     break;
-                
                 case 1:
                     descriptorLabel.Text = "You are in some kind of alien like cell. You do not see any buttons or things that could help you escape. Although you do recognize the door like structure in front of you...";
                     option1.Visible = false;
@@ -254,13 +247,10 @@ namespace Summative_Adventure_Game
                     BackgroundImage = Properties.Resources.Hallway_Two;
                     SoundPlayer spaceplayer = new SoundPlayer(Properties.Resources.Space);
 
-
                     descriptorLabel.Text = "You walk right, eventually you start tohear ominous noises. It might be the ship, or something else ...";
 
                     option3.Visible = true;
                     option2.Visible = true;
-
-                    
 
                     option1.Text = "Wait and see if anything comes";
                     option2.Text = "Trek ahead";
@@ -294,7 +284,6 @@ namespace Summative_Adventure_Game
                         menuLabel.Visible = true;
                     }
 
-
                     break;
                 case 16:
                     descriptorLabel.Text = "You keep walking, then suddenly something attacks you from behind, you never see what it was. You die. Play again? (press menu to get options)";
@@ -311,7 +300,6 @@ namespace Summative_Adventure_Game
                     option1.Text = "Turn left";
                     option2.Text = "Turn right";
                     break;
-
                 case 18:
                     BackgroundImage = Properties.Resources.Alien;
 
@@ -371,8 +359,6 @@ namespace Summative_Adventure_Game
 
                     break;
                 case 99:
-
-
                     descriptorLabel.Text = "Thanks for playing!";
 
                     option1.Visible = false;
@@ -387,8 +373,6 @@ namespace Summative_Adventure_Game
                     Close();
 
                     break;
-
-
             }
         }
 
@@ -469,9 +453,8 @@ namespace Summative_Adventure_Game
                     option1.Visible = true;
                     option2.Visible = true;
                     option3.Visible = true;
+                    
                     break;
-
-
                 case 1:
                     descriptorLabel.Text = "You are in some kind of alien like cell. You do not see any buttons or things that could help you escape. Although you do recognize the door like structure in front of you...";
                     option1.Visible = false;
@@ -574,7 +557,6 @@ namespace Summative_Adventure_Game
 
                     break;
                 case 12:
-
                     descriptorLabel.Text = "It is locked";
 
                     option2.Visible = false;
@@ -590,7 +572,6 @@ namespace Summative_Adventure_Game
                     option3.Visible = true;
                     option2.Visible= true;
 
-                   
                     option1.Text = "Wait and see if anything comes";
                     option2.Text = "Trek ahead";
                     option3.Text = "Go back to your cell";
@@ -623,7 +604,6 @@ namespace Summative_Adventure_Game
                         menuLabel.Visible = true;
                     }
 
-
                     break;
                 case 16:
                     descriptorLabel.Text = "You keep walking, then suddenly something attacks you from behind, you never see what it was. You die. Play again? (press menu to get options)";
@@ -639,8 +619,8 @@ namespace Summative_Adventure_Game
 
                     option1.Text = "Turn left";
                     option2.Text = "Turn right";
+                    
                     break;
-
                 case 18:
                     BackgroundImage = Properties.Resources.Alien;
                    
@@ -699,8 +679,6 @@ namespace Summative_Adventure_Game
 
                     break;
                 case 99:
-
-
                     descriptorLabel.Text = "Thanks for playing!";
 
                     option1.Visible = false;
@@ -780,7 +758,7 @@ namespace Summative_Adventure_Game
                     descriptorLabel.Text = "In fact the whole place seems kind of empty...";
 
                     option2.Visible = false;
-
+                    
                     break;
                 case 3:
                     descriptorLabel.Text = "You approach the door like structure, do you...";
@@ -868,7 +846,6 @@ namespace Summative_Adventure_Game
 
                     break;
                 case 12:
-
                     descriptorLabel.Text = "It is locked";
 
                     option2.Visible = false;
@@ -881,7 +858,6 @@ namespace Summative_Adventure_Game
                     SoundPlayer spaceplayer = new SoundPlayer(Properties.Resources.Space);
                     descriptorLabel.Text = "You walk right, eventually you start tohear ominous noises. It might be the ship, or something else ...";
 
-                    
                     option3.Visible = true;
                     option2.Visible = true;
 
@@ -916,7 +892,6 @@ namespace Summative_Adventure_Game
                         option3.Visible = false;
                         menuLabel.Visible = true;
                     }
-
 
                     break;
                 case 16:
@@ -993,8 +968,6 @@ namespace Summative_Adventure_Game
 
                     break;
                 case 99:
-
-
                     descriptorLabel.Text = "Thanks for playing!";
 
                     option1.Visible = false;
@@ -1027,7 +1000,6 @@ namespace Summative_Adventure_Game
                     break;
                 case 2:
                     descriptorLabel.Text = "Nobody responds to your call.";
-
 
                     Refresh();
                     Thread.Sleep(2000);
@@ -1123,7 +1095,6 @@ namespace Summative_Adventure_Game
 
                     break;
                 case 12:
-
                     descriptorLabel.Text = "It is locked";
 
                     option2.Visible = false;
@@ -1170,8 +1141,7 @@ namespace Summative_Adventure_Game
                         option3.Visible = false;
                         menuLabel.Visible = true;
                     }
-
-
+                    
                     break;
                 case 16:
                     descriptorLabel.Text = "You keep walking, then suddenly something attacks you from behind, you never see what it was. You die. Play again? (press menu to get options)";
@@ -1188,7 +1158,6 @@ namespace Summative_Adventure_Game
                     option1.Text = "Turn left";
                     option2.Text = "Turn right";
                     break;
-
                 case 18:
                     BackgroundImage = Properties.Resources.Alien;
 
@@ -1249,8 +1218,6 @@ namespace Summative_Adventure_Game
                 //Closes the game when the player decides to stop playing
                 
                 case 99:
-
-
                     descriptorLabel.Text = "Thanks for playing!";
 
                     option1.Visible = false;
